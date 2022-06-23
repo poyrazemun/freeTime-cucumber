@@ -6,5 +6,5 @@ Feature: Twitter DM functionality
     When  user types "@merveebaylarr" to the searchbox and clicks the result
     When user clicks message box
     When user clicks message input box
-    When user writes "Bunun otomatik mesaj olmasi seni sevdigim gercegini degistirmez" and send the message
+    When user writes "askim deneme cevap yazma" and send the message
 
