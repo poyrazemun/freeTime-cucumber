@@ -26,6 +26,8 @@ public class TwitterStepDef {
 
     @When("user types {string} to the searchbox and clicks the result")
     public void userTypesToTheSearchboxAndClicksTheResult(String arg0) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.visibilityOf(twitterAllPages.searchBox));
         twitterAllPages.searchBox.sendKeys(arg0 + Keys.ENTER);
         twitterAllPages.clickableSearchResult.click();
 
