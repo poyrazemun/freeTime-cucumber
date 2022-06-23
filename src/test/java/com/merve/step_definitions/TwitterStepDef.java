@@ -51,6 +51,7 @@ public class TwitterStepDef {
     @When("user writes {string} and send the message")
     public void user_writes_and_send_the_message(String string) {
         twitterAllPages.startAMessage.sendKeys(string + Keys.ENTER);
+        System.out.println("aaaaa");
     }
 
 
