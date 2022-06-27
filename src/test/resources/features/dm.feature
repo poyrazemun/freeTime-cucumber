@@ -1,3 +1,4 @@
+@smoke
 Feature: Twitter DM functionality
 
   Scenario: As a Omer Fatih, i should send a DM to Merve
