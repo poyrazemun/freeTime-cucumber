@@ -1,4 +1,4 @@
-@smoke
+@zort
 Feature: Twitter DM functionality
 
   Scenario: As a Omer Fatih, i should send a DM to Merve
@@ -7,5 +7,5 @@ Feature: Twitter DM functionality
     When  user types "@merveebaylarr" to the searchbox and clicks the result
     When user clicks message box
     When user clicks message input box
-    When user writes "beni ara" and send the message
+    When user writes "seni seviyorum" and send the message
 
