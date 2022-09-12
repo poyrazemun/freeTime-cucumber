@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/merve/step_definitions",
-        tags = ""
+        tags = "@merve"
 )
 
 public class CukesRunner {

@@ -49,7 +49,7 @@ public class Driver {
 
         if ((driverPool.get() != null)) {
             driverPool.get().quit();
-            driverPool.set(null);   //driverPool.remove(); bu ikisi ayni
+            driverPool.set(null);
         }
     }
 
