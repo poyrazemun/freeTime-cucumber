@@ -25,10 +25,10 @@ public class TwitterStepDef {
     }
 
     @When("user types {string} to the searchbox and clicks the result")
-    public void userTypesToTheSearchboxAndClicksTheResult(String arg0) {
+    public void userTypesToTheSearchboxAndClicksTheResult(String userNameOfTheReceiver) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
         wait.until(ExpectedConditions.visibilityOf(twitterAllPages.searchBox));
-        twitterAllPages.searchBox.sendKeys(arg0 + Keys.ENTER);
+        twitterAllPages.searchBox.sendKeys(userNameOfTheReceiver + Keys.ENTER);
         twitterAllPages.clickableSearchResult.click();
 
     }
@@ -36,19 +36,21 @@ public class TwitterStepDef {
 
     @And("user clicks message box")
     public void user_clicks_message_box() {
+
         twitterAllPages.messageBox.click();
     }
 
     @And("user clicks message input box")
     public void user_clicks_message_input_box() {
+
         twitterAllPages.startAMessage.click();
 
     }
 
     @Then("user writes {string} and send the message")
-    public void user_writes_and_send_the_message(String string) {
-        twitterAllPages.startAMessage.sendKeys(string + Keys.ENTER);
+    public void user_writes_and_send_the_message(String myMessage) {
 
+        twitterAllPages.startAMessage.sendKeys(myMessage + Keys.ENTER);
     }
 
 
