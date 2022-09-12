@@ -15,8 +15,8 @@ public class TwitterStepDef {
 
     TwitterAllPages twitterAllPages = new TwitterAllPages();
 
-    @Given("user is already in dashboard of Twitter")
-    public void user_is_already_in_dashboard_of_twitter() {
+    @Given("user is already on the dashboard of Twitter")
+    public void user_is_already_on_the_dashboard_of_twitter() {
 
         Driver.getDriver().get("https://twitter.com/i/flow/login");
         twitterAllPages.username.sendKeys(ConfigurationReader.getProperty("username") + Keys.ENTER);
