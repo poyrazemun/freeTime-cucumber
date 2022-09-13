@@ -1,8 +1,10 @@
 package com.merve.step_definitions;
 
 import com.merve.pages.TwitterAllPages;
+import com.merve.utilities.BrowserUtils;
 import com.merve.utilities.ConfigurationReader;
 import com.merve.utilities.Driver;
+import com.merve.utilities.Shakespeare;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -50,7 +52,9 @@ public class TwitterStepDef {
     @Then("user writes {string} and send the message")
     public void user_writes_and_send_the_message(String myMessage) {
 
+        myMessage = Shakespeare.quote();
         twitterAllPages.startAMessage.sendKeys(myMessage + Keys.ENTER);
+        BrowserUtils.sleep(3);
     }
 
 

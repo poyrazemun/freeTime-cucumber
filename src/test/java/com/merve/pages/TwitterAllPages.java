@@ -22,7 +22,7 @@ public class TwitterAllPages {
     @FindBy(xpath = "//input[@aria-label='Search query']")
     public WebElement searchBox;
 
-    @FindBy(xpath ="//span[text()='mademoiselle']")
+    @FindBy(xpath ="//span[text()='poyri']")
     public WebElement clickableSearchResult;
 
     @FindBy(xpath = "//div[@data-testid='sendDMFromProfile']")
